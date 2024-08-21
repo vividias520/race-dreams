@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="shortcut icon" href="carroo.png">
+</head>
+
+<body>
+    <div id="content-container">
+        <div id="main-content">
+    <img class="logo" src="logobc.png" alt="logotipo">
+    <h2>LOGIN</h2>
+    <form id="registration-form">
+        <div>
+            <div><label>Digite seu Email</label></div>
+            <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="validateFields()"/>
+        <div>
+            <div><label>Digite sua Senha</label></div>
+            <input type="password" name="password" id="password" placeholder="Senha" onchange="validateFields()"/>
+        </div>
+        <div>
+            <button type="button" class="outline" id="login-button" disabled="false" onclick="login()">Entrar</button>
+        </div>
+        <div>
+            <button type="button" class="solid" id="recover-password-button" disabled="false" onclick="recoverPassword()">Recuperar senha</button>
+        </div>
+        <div>
+            <button type="button" class="outline" onclick="registrar()">Cadastrar</button>
+        </div>
+    </form>
+    
+</body>
+    
+<script src="./login.js"> </script>
+
+</script>
+<script src ="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
+<script>
+const firebaseConfig = {
+apiKey: "AIzaSyAEUPoo--QN12EiDPKWwbBxEK8P7KaxSHU",
+authDomain: "sonhos-9cd53.firebaseapp.com",
+projectId: "sonhos-9cd53",
+storageBucket: "sonhos-9cd53.appspot.com",
+messagingSenderId: "934154160282",  
+appId: "1:934154160282:web:7ca6ce6bf24fb3f0de7723"
+};
+firebase.initializeApp(firebaseConfig);
+</script>
+</html>

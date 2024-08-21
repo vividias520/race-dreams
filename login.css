@@ -1,0 +1,105 @@
+
+
+body {
+  background-image: url("estrada.avif");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  
+}
+
+
+  #content-container {
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #main-content {
+    background-color: rgba(0, 0, 0, 0.656);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #0a009c;
+    font-size: 2.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  form {
+    /*display:flex;*/
+    flex-direction: column;
+  }
+  
+  label {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  input,
+  button {
+    background-color: #5411b9bd;
+    color: #ffffff;
+    padding: 5rem;
+    border: none;
+    border-radius: 400px;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  button.clear {
+    background-color: #5411b9e1;
+    cursor: not-allowed;
+  }
+  
+  button.clear:hover {
+    background-color: #5411b9bd;
+  }
+  
+  button.active,
+  button:active {
+    background-color: #5411b9bd;
+  }
+
+form {
+    width: 300px;
+}
+
+input, button {
+    padding: 8px;
+    margin-bottom: 20px;
+    width: -webkit-fill-available;
+}
+button {
+    cursor:pointer;
+}
+button:active {
+    opacity: 8.0;
+}
+button[disabled] {
+    opacity: 0.8;
+    color: rgb(255, 255, 255);
+}
+.logo {
+  height: 170px;
+  
+}
+
+.solid {
+  background: #5411b9ed;
+  border: none;
+}
+.outline {
+  background: transparent;
+  color: white;
+  border: 3px solid #5411b9cf;
+}
+
+
+
+
